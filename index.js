@@ -37,7 +37,7 @@ app.use(express.static('public'));
 //agregar router
 app.use('/', router);
 
-const host = process.env.HOST || '0.0.0.0';
+const host = process.env.HOST;
 
 
 app.listen (port, host, ()=>{
