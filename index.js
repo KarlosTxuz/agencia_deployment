@@ -42,5 +42,5 @@ const host = process.env.HOST || '0.0.0.0';
 
 
 app.listen (port, host, ()=>{
-    console.log('El servidor esta funcionando en ${ PORT }')
+    console.log(`El servidor esta funcionando en ${PORT}`)
 })
