@@ -14,7 +14,7 @@ db.authenticate()
 
 
 //Definir puerto
-const port = process.env.PORT || 4000;
+
 
 //habilitar pug
 app.set('view engine', 'pug');
@@ -37,7 +37,8 @@ app.use(express.static('public'));
 //agregar router
 app.use('/', router);
 
-const host = process.env.HOST;
+const port = process.env.PORT || 3000;
+const host = process.env.HOST || '0.0.0.0';
 
 
 app.listen (port, host, ()=>{
