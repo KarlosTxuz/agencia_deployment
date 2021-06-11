@@ -37,10 +37,10 @@ app.use(express.static('public'));
 //agregar router
 app.use('/', router);
 
-// const port = process.env.PORT || 5000;
+const port = process.env.PORT;
 const host = process.env.HOST || '0.0.0.0';
 
 
-app.listen (host, ()=>{
-    console.log('El servidor esta funcionando')
+app.listen (port, host, ()=>{
+    console.log('El servidor esta funcionando en ${ PORT }')
 })
